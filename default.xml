@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
+
 	<remote
 		name="osmo"
 		fetch="git://git.osmocom.org/"
@@ -52,5 +53,9 @@
 	/><project
 		name="osmo-iuh"
 		revision="09ed4b4adc7d36c83d821a1dfa22156e76be461f"
+
+	/><project
+		name="osmo-ci"
+		revision="e72f35cfa9969e52d0018ba4661f4519519c39ba"
 
 /></manifest>
