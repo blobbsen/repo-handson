@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+	<remote name="osmo""
+		fetch="git://git.osmocom.org/ 
+	/>
+
+	<default revision"refs/heads/master"
+		 remote="osmo""
+		 sync-j="4" 
+	/>
+
+	<project name="libosmocore" 
+		 revision="a81055db1dc2046f57f1c78f055f693b5a4e3308" 
+	/>
+</manifest>
