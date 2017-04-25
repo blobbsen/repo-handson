@@ -1,24 +1,18 @@
 #!/bin/bash -ex
 
-cloneRepoAndSetCorrectHead(){
-  cd "$osmo_src"
-  repo=$(echo $1 | cut -d '/' -f1)
-  git clone "git://git.osmocom.org/$repo"
-  cd "$1"
-  $2
-  $3
-}
+# NOTE: build function can move to osmo-ci to be commonly used.
+#       If commonly used the entire build() can be replaced with
+#       "source <source-file>" which holds build(). (< 20 lines)
 
 build() {
-
-  buildDir=$1
-  make_parallel=$2
+  buildDir="$1"
+  make_parallel="$2"
   not_make_check="$3"
   config="$4"
-  ApplyBranch=$5
-  orTag=$6
+  ApplyBranch="$5"
+  orTag="$6"
 
-  cloneRepoAndSetCorrectHead "$buildDir" "$ApplyBranch" "$orTag"
+  cd "$buildDir"
 
   autoreconf -fi
   ./configure "$config"
@@ -35,10 +29,11 @@ build() {
 
   make install
   ldconfig
+
+  cd "$base"
 }
 
-osmo_src=$HOME/osmo/src
-mkdir -p $osmo_src
+base=$(pwd)
 
 build "libosmocore"
 build "libosmo-abis"
