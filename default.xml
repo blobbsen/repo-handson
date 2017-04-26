@@ -58,4 +58,28 @@
 		name="osmo-ci"
 		revision="483c54f0ab41890d79bb1b305b98ae6b0c48f254"
 
+	/><project
+		name="osmo-bts"
+		revision="1131d43735392a75edfad7c91607942b6a51c87c"
+
+	/><project
+		name="osmo-pcu"
+		revision="487a141b9dcfd03f58908249b37268437f01736c"
+
+	/><project
+		name="osmo-trx"
+		revision="cd8381743f1fe458f10e96020ad4626f4ae3d7bd"
+
+	/><project
+		name="osmo-python-tests"
+		revision="1131d43735392a75edfad7c91607942b6a51c87c"
+
+	/><project
+	  name="octphy-2g-headers"
+		revision="31d4176efde046ba837e74f990e3454bf98f73de"
+
+	/><project
+		name="osmo-gsm-manuals"
+		revision="37ba7a9825c893563c98481681209de3ad6c9ec7"
+
 /></manifest>
