@@ -9,6 +9,13 @@ build() {
   config="$2"
   not_make_check="$3"
   make_parallel="$4"
+  generic_make=""
+
+  if [[ "$(uname)" == *"FreeBSD"* ]]; then
+    generic_make="gmake"
+  else
+    generic_make="make"
+  fi
 
   cd "$buildDir"
 
@@ -16,16 +23,16 @@ build() {
   ./configure $config
 
   if [ "$make_parallel" = "" ]; then
-      make -j4
+      "$generic_make" -j4
   else
-      make "$make_parallel"
+      "$generic_make" "$make_parallel"
   fi
 
   if [ "$not_make_check" = "" ]; then
-      make check
+      "$generic_make" check
   fi
 
-  make install
+  "$generic_make" install
   ldconfig
 
   cd "$base"
