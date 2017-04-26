@@ -15,7 +15,7 @@ build() {
   cd "$buildDir"
 
   autoreconf -fi
-  ./configure "$config"
+  ./configure $config
 
   if [ "$make_parallel" = "" ]; then
       make -j4
@@ -35,14 +35,14 @@ build() {
 
 base=$(pwd)
 
-build "libosmocore" "" "" "ac_cv_path_DOXYGEN=false"
-build "libosmo-abis"
-build "libosmo-netif"
-build "libosmo-sccp" "" "" "" "git tag -l" "git checkout tags/old_sua"
-build "libsmpp34" "-j1"
-build "asn1c" "" "no make check" "" "git checkout aper-prefix-onto-upstream"
-build "libasn1c"
-build "osmo-iuh"
-build "openggsn"
-build "openbsc/openbsc" "" "no make check" " --enable-iu --enable-nat --enable-mgcp-transcoding" "git checkout vlr_3G"
-build "osmo-hlr"
+#build "libosmocore" "" "" "ac_cv_path_DOXYGEN=false"
+#build "libosmo-abis"
+#build "libosmo-netif"
+#build "libosmo-sccp" "" "" "" "git tag -l" "git checkout tags/old_sua"
+#build "libsmpp34" "-j1"
+#build "asn1c" "" "no make check" "" "git checkout aper-prefix-onto-upstream"
+#build "libasn1c"
+#build "osmo-iuh"
+#build "openggsn"
+#build "openbsc/openbsc" "" "no make check" "--enable-nat --enable-iu --enable-mgcp-transcoding" "git checkout vlr_3G"
+build "osmo-hlr" "" "no make check"
