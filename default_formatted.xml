@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="osmo" fetch="git://git.osmocom.org/" />
+	<default revision="refs/heads/master" remote="osmo" sync-j="4" />
+	<project name="asn1c" revision="746cb60bbccf47019563665f4aec4b6c462c4163" />
+	<project name="libasn1c" revision="20d668cbd3c14ef32fcbd09617fbd3c8e6856ec0" />
+	<project name="libosmo-abis" revision="0ba77d53a97906ee70a262083fb30f67fe8801c5" />
+	<project name="libosmocore" revision="947c6f81a57aa13c26f4e29fe21d57987b178267" />
+	<project name="libosmo-netif" revision="8bf16493f68fd53c6e14f1612caf7425c73b2f4d" />
+	<project name="libosmo-sccp" revision="f3a057c8a2e7ee602bd797753db5949cb04f4b18" />
+	<project name="libsmpp34" revision="4b233b4f3b22f79c2bdd60703d309c9929f74ab6" />
+	<project name="openbsc" revision="52b1f9888905df8aa6ecd50af900b63f5273de6a" />
+	<project name="openggsn" revision="52c2414f6cabefb0427475756e8ac4856180bc59" />
+	<project name="osmo-hlr" revision="e72cf55347542fccd9dbaee6dbff342ebc81dc6c" />
+	<project name="osmo-iuh" revision="a97e436ce5f9fcd00275fba2b3cc81190dd38167" />
+	<project name="osmo-ci" revision="483c54f0ab41890d79bb1b305b98ae6b0c48f254" />
+	<project name="osmo-bts" revision="1131d43735392a75edfad7c91607942b6a51c87c" />
+	<project name="osmo-pcu" revision="487a141b9dcfd03f58908249b37268437f01736c" />
+	<project name="osmo-trx" revision="cd8381743f1fe458f10e96020ad4626f4ae3d7bd" />
+	<project name="osmo-python-tests" revision="1131d43735392a75edfad7c91607942b6a51c87c" />
+	<project name="octphy-2g-headers" revision="31d4176efde046ba837e74f990e3454bf98f73de" />
+	<project name="osmo-gsm-manuals" revision="37ba7a9825c893563c98481681209de3ad6c9ec7" />
+</manifest>
