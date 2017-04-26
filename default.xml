@@ -12,7 +12,7 @@
 
 	/><project
 		name="asn1c"
-		revision="b9b7c9e54d079c6093a5e77a79aabed409dc9bfb"
+		revision="746cb60bbccf47019563665f4aec4b6c462c4163"
 
 	/><project
 		name="libasn1c"
@@ -20,42 +20,42 @@
 
 	/><project
 		name="libosmo-abis"
-		revision="bf7976c0b0076410ad1bd67061dd18d0f33a7f43"
+		revision="0ba77d53a97906ee70a262083fb30f67fe8801c5"
 
 	/><project
 		name="libosmocore"
-		revision="9e83c3d5ca64428befe74e5aad61bd84bccaf309"
+		revision="947c6f81a57aa13c26f4e29fe21d57987b178267"
 
 	/><project
 		name="libosmo-netif"
-		revision="c108c9db969c4d4abaccc88419b4ac0c44957365"
+		revision="8bf16493f68fd53c6e14f1612caf7425c73b2f4d"
 
 	/><project
 		name="libosmo-sccp"
-		revision="8e708d1f2da1b187f631bf08172a5194a85b1a23"
+		revision="f3a057c8a2e7ee602bd797753db5949cb04f4b18"
 
 	/><project
 		name="libsmpp34"
-		revision="cc0bcd6bc051d5ccaf32cdbbc28f073369900857"
+		revision="4b233b4f3b22f79c2bdd60703d309c9929f74ab6"
 
 	/><project
 		name="openbsc"
-		revision="2e8ecf3af3c1ffab29357f45e4576b2d3b9268e4"
+		revision="52b1f9888905df8aa6ecd50af900b63f5273de6a"
 
 	/><project
 		name="openggsn"
-		revision="a8f71eb24e03488dd92810e386567b46893fe17a"
+		revision="52c2414f6cabefb0427475756e8ac4856180bc59"
 
 	/><project
 		name="osmo-hlr"
-		revision="e9d37db7f23076571e2ac8fdbeae64158063acac"
+		revision="e72cf55347542fccd9dbaee6dbff342ebc81dc6c"
 
 	/><project
 		name="osmo-iuh"
-		revision="09ed4b4adc7d36c83d821a1dfa22156e76be461f"
+		revision="a97e436ce5f9fcd00275fba2b3cc81190dd38167"
 
 	/><project
 		name="osmo-ci"
-		revision="e72f35cfa9969e52d0018ba4661f4519519c39ba"
+		revision="483c54f0ab41890d79bb1b305b98ae6b0c48f254"
 
 /></manifest>
