@@ -9,5 +9,9 @@ repo sync
 For more information:
 
 ```
-cd repo-handson; git log
+git clone https://github.com/blobbsen/repo-handson.git
+cd repo-handson
+git log
 ```    
+
+Note: One should *not* clone the "repo-handson" repo inside the directory, where repo init... has been executed.
