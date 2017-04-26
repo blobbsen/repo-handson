@@ -5,6 +5,8 @@
 #       "source <source-file>" which holds build(). (< 20 lines)
 
 build() {
+  base=$(pwd)
+
   buildDir="$1"
   config="$2"
   not_make_check="$3"
@@ -37,8 +39,6 @@ build() {
 
   cd "$base"
 }
-
-base=$(pwd)
 
 build "libosmocore" "ac_cv_path_DOXYGEN=false"
 build "libosmo-abis"
