@@ -9,8 +9,6 @@ build() {
   make_parallel="$2"
   not_make_check="$3"
   config="$4"
-  ApplyBranch="$5"
-  orTag="$6"
 
   cd "$buildDir"
 
@@ -38,11 +36,11 @@ base=$(pwd)
 build "libosmocore" "" "" "ac_cv_path_DOXYGEN=false"
 build "libosmo-abis"
 build "libosmo-netif"
-build "libosmo-sccp" "" "" "" "git tag -l" "git checkout tags/old_sua"
+build "libosmo-sccp" "" "" ""
 build "libsmpp34" "-j1"
-build "asn1c" "" "no make check" "" "git checkout aper-prefix-onto-upstream"
+build "asn1c" "" "no make check" ""
 build "libasn1c"
 build "osmo-iuh"
 build "openggsn"
-build "openbsc/openbsc" "" "no make check" "--enable-nat --enable-iu --enable-mgcp-transcoding" "git checkout vlr_3G"
+build "openbsc/openbsc" "" "no make check"
 build "osmo-hlr" "" "no make check"
