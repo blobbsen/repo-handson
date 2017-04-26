@@ -9,8 +9,5 @@ repo sync
 For more information:
 
 ```
-git clone https://github.com/blobbsen/repo-handson
 cd repo-handson; git log
 ```    
-   
-
