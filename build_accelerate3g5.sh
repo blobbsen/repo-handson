@@ -6,9 +6,9 @@
 
 build() {
   buildDir="$1"
-  make_parallel="$2"
+  config="$2"
   not_make_check="$3"
-  config="$4"
+  make_parallel="$4"
 
   cd "$buildDir"
 
@@ -33,14 +33,14 @@ build() {
 
 base=$(pwd)
 
-build "libosmocore" "" "" "ac_cv_path_DOXYGEN=false"
+build "libosmocore" "ac_cv_path_DOXYGEN=false"
 build "libosmo-abis"
 build "libosmo-netif"
-build "libosmo-sccp" "" "" ""
-build "libsmpp34" "-j1"
-build "asn1c" "" "no make check" ""
+build "libosmo-sccp"
+build "libsmpp34" "" "" "-j1"
+build "asn1c" "" "no make check"
 build "libasn1c"
 build "osmo-iuh"
 build "openggsn"
-build "openbsc/openbsc" "" "no make check"
+build "openbsc/openbsc" "--enable-nat --enable-iu --enable-mgcp-transcoding" "--no-mkcheck"
 build "osmo-hlr" "" "no make check"
